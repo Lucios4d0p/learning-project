@@ -9,10 +9,8 @@ public class Persona {
 
     @Id
     private int idPersona;
-
-    @Column(name="nome",length = 30)
+    @Column(name = "nome")
     private String nome;
-
 
     public int getIdPersona() {
         return idPersona;

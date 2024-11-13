@@ -17,8 +17,8 @@ public class DemoController {
     @GetMapping("/greeting")
     public String greeting(@RequestParam(name="name",required = false,defaultValue = "World") String name, Model model) {
 
-        Persona p =new Persona();
-        p.setIdPersona(1);
+        Persona p = new Persona();
+        p.setIdPersona(5);
         p.setNome("Kelvin");
         repository.save(p);
 
